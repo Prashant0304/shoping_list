@@ -19,6 +19,7 @@ function App() {
         )
         );
   };
+  
   return <div className="appWrapper"> 
     <Header/>
     <Main 
@@ -27,7 +28,7 @@ function App() {
     onDeleteItem={handleDeleteItem}
     handleDoneItem={handleDoneItem}
     /> 
-    <Footer/> 
+    <Footer items={items}/> 
      </div>;
 }
 
