@@ -9,8 +9,7 @@ const Main = ({items,handleAddItems,onDeleteItem,handleDoneItem}) =>{
         sortedItems=items;
     }
     if(sortBy==="packed"){ 
-        sortedItems=items
-        .slice().sort((a,b) => Number(a.packed) - Number(b.packed));
+        sortedItems=items.slice().sort((a,b) => Number(a.packed) - Number(b.packed));
     }
     return  (
         <div>
