@@ -6,7 +6,7 @@ const List=({item,onDeleteItem,handleDoneItem}) =>{
         <p style={packed ? {textDecoration:"line-through"}: {}}>{product}</p>
         <div>
             <button onClick={()=>handleDoneItem(id)} className="doneBtn">Done</button>
-            <button onClick={()=>onDeleteItem(  id)} className="deleteBtn">Delete</button>
+            <button onClick={()=>onDeleteItem( id)} className="deleteBtn">Delete</button>
         </div>
     </li>
 );
